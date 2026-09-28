@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2100" height="1120" viewBox="0 0 2100 1120">
+<defs>
+<marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#52616b"/></marker>
+<filter id="shadow" x="-10%" y="-10%" width="120%" height="125%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.16"/></filter>
+</defs>
+<rect width="2100" height="1120" fill="#f8fafc"/>
+<text x="1050.0" y="38" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="bold" fill="#17212b"><tspan x="1050.0" dy="0">Роадмап трансформации</tspan></text><text x="1050.0" y="66" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" fill="#52616b"><tspan x="1050.0" dy="0">12 месяцев: от согласованной архитектуры до портала и read-only legacy</tspan></text>
+<line x1="330" y1="170" x2="330" y2="860" stroke="#cbd5e1" stroke-width="1"/>
+<text x="397.5" y="150" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" fill="#334155"><tspan x="397.5" dy="0">M1</tspan></text>
+<line x1="465" y1="170" x2="465" y2="860" stroke="#cbd5e1" stroke-width="1"/>
+<text x="532.5" y="150" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" fill="#334155"><tspan x="532.5" dy="0">M2</tspan></text>
+<line x1="600" y1="170" x2="600" y2="860" stroke="#cbd5e1" stroke-width="1"/>
+<text x="667.5" y="150" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" fill="#334155"><tspan x="667.5" dy="0">M3</tspan></text>
+<line x1="735" y1="170" x2="735" y2="860" stroke="#cbd5e1" stroke-width="1"/>
+<text x="802.5" y="150" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" fill="#334155"><tspan x="802.5" dy="0">M4</tspan></text>
+<line x1="870" y1="170" x2="870" y2="860" stroke="#cbd5e1" stroke-width="1"/>
+<text x="937.5" y="150" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" fill="#334155"><tspan x="937.5" dy="0">M5</tspan></text>
+<line x1="1005" y1="170" x2="1005" y2="860" stroke="#cbd5e1" stroke-width="1"/>
+<text x="1072.5" y="150" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" fill="#334155"><tspan x="1072.5" dy="0">M6</tspan></text>
+<line x1="1140" y1="170" x2="1140" y2="860" stroke="#cbd5e1" stroke-width="1"/>
+<text x="1207.5" y="150" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" fill="#334155"><tspan x="1207.5" dy="0">M7</tspan></text>
+<line x1="1275" y1="170" x2="1275" y2="860" stroke="#cbd5e1" stroke-width="1"/>
+<text x="1342.5" y="150" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" fill="#334155"><tspan x="1342.5" dy="0">M8</tspan></text>
+<line x1="1410" y1="170" x2="1410" y2="860" stroke="#cbd5e1" stroke-width="1"/>
+<text x="1477.5" y="150" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" fill="#334155"><tspan x="1477.5" dy="0">M9</tspan></text>
+<line x1="1545" y1="170" x2="1545" y2="860" stroke="#cbd5e1" stroke-width="1"/>
+<text x="1612.5" y="150" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" fill="#334155"><tspan x="1612.5" dy="0">M10</tspan></text>
+<line x1="1680" y1="170" x2="1680" y2="860" stroke="#cbd5e1" stroke-width="1"/>
+<text x="1747.5" y="150" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" fill="#334155"><tspan x="1747.5" dy="0">M11</tspan></text>
+<line x1="1815" y1="170" x2="1815" y2="860" stroke="#cbd5e1" stroke-width="1"/>
+<text x="1882.5" y="150" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" fill="#334155"><tspan x="1882.5" dy="0">M12</tspan></text>
+<line x1="1950" y1="170" x2="1950" y2="860" stroke="#cbd5e1" stroke-width="1"/>
+<rect x="20" y="170" width="1930" height="115" fill="#ffffff"/>
+<text x="30" y="235" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#17212b"><tspan x="30" dy="0">Foundation</tspan></text>
+<line x1="20" y1="285" x2="1950" y2="285" stroke="#cbd5e1"/>
+<rect x="20" y="285" width="1930" height="115" fill="#f1f5f9"/>
+<text x="30" y="350" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#17212b"><tspan x="30" dy="0">Platform</tspan></text>
+<line x1="20" y1="400" x2="1950" y2="400" stroke="#cbd5e1"/>
+<rect x="20" y="400" width="1930" height="115" fill="#ffffff"/>
+<text x="30" y="465" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#17212b"><tspan x="30" dy="0">Security &amp; governance</tspan></text>
+<line x1="20" y1="515" x2="1950" y2="515" stroke="#cbd5e1"/>
+<rect x="20" y="515" width="1930" height="115" fill="#f1f5f9"/>
+<text x="30" y="580" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#17212b"><tspan x="30" dy="0">Domains</tspan></text>
+<line x1="20" y1="630" x2="1950" y2="630" stroke="#cbd5e1"/>
+<rect x="20" y="630" width="1930" height="115" fill="#ffffff"/>
+<text x="30" y="695" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#17212b"><tspan x="30" dy="0">Portal &amp; BI</tspan></text>
+<line x1="20" y1="745" x2="1950" y2="745" stroke="#cbd5e1"/>
+<rect x="20" y="745" width="1930" height="115" fill="#f1f5f9"/>
+<text x="30" y="810" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#17212b"><tspan x="30" dy="0">Migration / change</tspan></text>
+<line x1="20" y1="860" x2="1950" y2="860" stroke="#cbd5e1"/>
+<rect x="336" y="198" width="258" height="58" rx="12" fill="#1c57cd" filter="url(#shadow)"/>
+<text x="465.0" y="224" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#ffffff"><tspan x="465.0" dy="0">C4/DFD, domains, baseline</tspan></text>
+<rect x="606" y="198" width="258" height="58" rx="12" fill="#1c57cd" filter="url(#shadow)"/>
+<text x="735.0" y="224" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#ffffff"><tspan x="735.0" dy="0">Terraform modules + landing zone</tspan></text>
+<rect x="471" y="313" width="393" height="58" rx="12" fill="#5b4b9a" filter="url(#shadow)"/>
+<text x="667.5" y="339" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#ffffff"><tspan x="667.5" dy="0">Lakehouse, Kafka, catalog, query</tspan></text>
+<rect x="876" y="313" width="528" height="58" rx="12" fill="#5b4b9a" filter="url(#shadow)"/>
+<text x="1140.0" y="339" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#ffffff"><tspan x="1140.0" dy="0">HA, quotas, observability</tspan></text>
+<rect x="336" y="428" width="528" height="58" rx="12" fill="#2e7d32" filter="url(#shadow)"/>
+<text x="600.0" y="454" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#ffffff"><tspan x="600.0" dy="0">classification, IAM/ABAC, data contracts</tspan></text>
+<rect x="876" y="428" width="663" height="58" rx="12" fill="#2e7d32" filter="url(#shadow)"/>
+<text x="1207.5" y="454" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#ffffff"><tspan x="1207.5" dy="0">audit, DLP, DR game days</tspan></text>
+<rect x="606" y="543" width="393" height="58" rx="12" fill="#d88c00" filter="url(#shadow)"/>
+<text x="802.5" y="569" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#ffffff"><tspan x="802.5" dy="0">Clinic + Fintech pilots</tspan></text>
+<rect x="1011" y="543" width="393" height="58" rx="12" fill="#d88c00" filter="url(#shadow)"/>
+<text x="1207.5" y="569" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#ffffff"><tspan x="1207.5" dy="0">Corporate + Partners</tspan></text>
+<rect x="1416" y="543" width="528" height="58" rx="12" fill="#d88c00" filter="url(#shadow)"/>
+<text x="1680.0" y="569" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#ffffff"><tspan x="1680.0" dy="0">Pharma + medtech onboarding</tspan></text>
+<rect x="741" y="658" width="528" height="58" rx="12" fill="#1168bd" filter="url(#shadow)"/>
+<text x="1005.0" y="684" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#ffffff"><tspan x="1005.0" dy="0">portal MVP + 10 reports</tspan></text>
+<rect x="1281" y="658" width="663" height="58" rx="12" fill="#1168bd" filter="url(#shadow)"/>
+<text x="1612.5" y="684" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#ffffff"><tspan x="1612.5" dy="0">self-service rollout</tspan></text>
+<rect x="471" y="773" width="528" height="58" rx="12" fill="#8b3a3a" filter="url(#shadow)"/>
+<text x="735.0" y="799" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#ffffff"><tspan x="735.0" dy="0">CDC + reconciliation</tspan></text>
+<rect x="1011" y="773" width="528" height="58" rx="12" fill="#8b3a3a" filter="url(#shadow)"/>
+<text x="1275.0" y="799" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#ffffff"><tspan x="1275.0" dy="0">report migration + training</tspan></text>
+<rect x="1551" y="773" width="393" height="58" rx="12" fill="#8b3a3a" filter="url(#shadow)"/>
+<text x="1747.5" y="799" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#ffffff"><tspan x="1747.5" dy="0">read-only DWH; exit plan</tspan></text>
+<polygon points="600,881 614,895 600,909 586,895" fill="#17212b"/>
+<text x="600" y="933" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#334155"><tspan x="600" dy="0">Архитектура согласована</tspan></text>
+<polygon points="870,881 884,895 870,909 856,895" fill="#17212b"/>
+<text x="870" y="933" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#334155"><tspan x="870" dy="0">Platform MVP</tspan></text>
+<polygon points="1275,881 1289,895 1275,909 1261,895" fill="#17212b"/>
+<text x="1275" y="933" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#334155"><tspan x="1275" dy="0">Portal MVP</tspan></text>
+<polygon points="1680,881 1694,895 1680,909 1666,895" fill="#17212b"/>
+<text x="1680" y="933" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#334155"><tspan x="1680" dy="0">M&amp;A template</tspan></text>
+<polygon points="1950,881 1964,895 1950,909 1936,895" fill="#17212b"/>
+<text x="1950" y="933" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#334155"><tspan x="1950" dy="0">Legacy read-only</tspan></text>
+<text x="30" y="1070" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#52616b"><tspan x="30" dy="0">Go/no-go на каждом milestone: reconciliation, SLO, security, DR и adoption. Legacy остаётся rollback-путём до прохождения gate.</tspan></text>
+</svg>

@@ -1,0 +1,31 @@
+Terraform v1.5.7
+Provider: registry.terraform.io/yandex-cloud/yandex v0.220.0
+Environment: disposable validation environment in Yandex Cloud
+
+Plan: 5 to add, 0 to change, 0 to destroy.
+
+Apply complete! Resources: 5 added, 0 changed, 0 destroyed.
+
+Created resource types:
+- yandex_vpc_network
+- yandex_vpc_subnet
+- yandex_vpc_security_group
+- yandex_compute_disk
+- yandex_compute_instance
+
+HTTP smoke test:
+<!doctype html>
+<html lang="en">
+  <head><meta charset="utf-8"><title>Future 2.0 Data Portal</title></head>
+  <body>
+    <h1>Future 2.0 Data Portal</h1>
+    <p>Provisioned reproducibly by Terraform and cloud-init.</p>
+  </body>
+</html>
+
+Post-apply idempotency check:
+No changes. Your infrastructure matches the configuration.
+Terraform detailed exit code: 0
+
+Resource IDs and the temporary public IP are omitted from this text transcript.
+The unedited Cloud Shell output is preserved in terraform-apply.png.

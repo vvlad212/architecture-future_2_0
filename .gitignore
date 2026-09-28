@@ -1,0 +1,16 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+Task4/.apply-live.auto.tfvars
+Task4/evidence/*.log.raw

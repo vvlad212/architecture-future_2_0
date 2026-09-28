@@ -1,0 +1,9 @@
+Destroy plan: 0 to add, 0 to change, 5 to destroy.
+
+Destroy complete! Resources: 5 destroyed.
+
+Post-destroy verification:
+- Terraform state entries: 0
+- Cloud resources with prefix future-2-0-s11: instances=0, disks=0
+- Yandex Cloud dashboard returned to the pre-test baseline:
+  3 VMs, 3 disks, 1 network, 3 subnets, 5 other VPC resources.
