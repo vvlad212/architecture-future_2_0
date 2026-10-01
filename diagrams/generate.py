@@ -134,24 +134,25 @@ def svg_document(width: int, height: int, body: list[str]) -> str:
 
 
 def c4_container() -> str:
-    width, height = 2200, 1420
+    width, height = 2200, 1600
     boxes = (
         Box("business", "Бизнес-пользователь", "конструирует отчёты", 35, 165, 230, 100, "#08427b", "#062f59"),
         Box("analyst", "Доменный аналитик", "публикует data products", 35, 445, 230, 100, "#08427b", "#062f59"),
         Box("owner", "Data Product Owner", "contract, SLO, quality", 35, 725, 230, 100, "#08427b", "#062f59"),
         Box("portal", "Self-Service Data Portal", "catalog, query builder, saved reports", 340, 140, 290, 115),
-        Box("gateway", "API Gateway / BFF", "OIDC, quotas, request validation", 720, 140, 285, 115, "#2e7d32", "#1f5b24"),
+        Box("gateway", "API Gateway / BFF", "sync routing; OIDC/quotas; request ФЛК", 720, 140, 285, 115, "#2e7d32", "#1f5b24"),
         Box("iam", "IAM + Policy Engine", "MFA; RBAC + ABAC; purpose", 1100, 120, 290, 115, "#2e7d32", "#1f5b24"),
         Box("catalog", "Catalog + Data Product Registry", "owner, contract, classification, lineage", 1100, 315, 315, 125, "#d88c00", "#9a6200", "#17212b"),
         Box("query", "Query & Semantic Service", "governed SQL, KPI model, result limits", 720, 350, 300, 125),
         Box("engine", "Distributed Query Engine", "independent compute pools and queues", 720, 570, 300, 115, "#5b4b9a", "#443575"),
         Box("lakehouse", "Domain Lakehouse", "object storage + Iceberg; curated products", 1120, 570, 330, 120, "#0b5f91", "#08476c"),
-        Box("orchestrator", "Orchestrator + Quality Gates", "batch/stream pipelines, quarantine, retries", 1120, 785, 330, 120),
-        Box("events", "Event Streaming + Schema Registry", "domain topics, outbox/CDC, DLQ", 720, 785, 300, 120, "#7b3fa1", "#5c2f78"),
+        Box("orchestrator", "Stream & Batch Processing + Quality Gates", "technical transforms; semantic ФЛК; retry/quarantine", 1120, 785, 330, 120),
+        Box("events", "Event Streaming + Schema Registry", "async routing; schema; outbox/CDC; DLQ/replay", 720, 785, 300, 120, "#7b3fa1", "#5c2f78"),
         Box("observability", "Observability + Audit", "data SLO, traces, query/export audit", 1510, 330, 300, 120, "#2e7d32", "#1f5b24"),
         Box("products", "Domain Data Products", "Clinic Ops | Fintech | Corporate | Partners", 1510, 570, 300, 120, "#0b5f91", "#08476c"),
-        Box("systems", "Domain Operational Systems", "DB per domain; versioned API and events", 1880, 570, 280, 120, "#5f6b76", "#414a52"),
-        Box("legacy", "Legacy SQL Server 2008 + Camel", "read-only bridge during migration; no new logic", 1510, 805, 300, 120, "#8b3a3a", "#662929"),
+        Box("systems", "Domain Operational Systems", "business rules; DB per domain; versioned API/events", 1880, 570, 280, 120, "#5f6b76", "#414a52"),
+        Box("adapters", "Domain Integration Adapters / ACL", "contract mapping; no business rules", 1880, 760, 280, 125, "#5f6b76", "#414a52"),
+        Box("legacy", "Legacy SQL Server 2008 + Camel", "sunset bridge; routes removed per domain", 1510, 805, 300, 120, "#8b3a3a", "#662929"),
         Box("clinical", "Clinical & AI PHI Zone", "medical records and studies; operational use only", 1850, 960, 310, 130, "#8b3a3a", "#662929"),
         Box("rule", "Жёсткая граница", "Медкарты, истории болезни и результаты исследований не передаются в Lakehouse и портал.", 1150, 1125, 1010, 115, "#fff4cc", "#b88900", "#17212b"),
     )
@@ -169,8 +170,9 @@ def c4_container() -> str:
         Edge("orchestrator", "lakehouse", "publish curated table", ((1285, 785), (1285, 690))),
         Edge("products", "lakehouse", "versioned product", ((1510, 630), (1450, 630)), "#0b5f91"),
         Edge("systems", "products", "outbox / CDC", ((1880, 630), (1810, 630)), "#7b3fa1"),
-        Edge("systems", "events", "domain events", ((2020, 690), (2020, 880), (1020, 880)), "#7b3fa1"),
-        Edge("legacy", "events", "anti-corruption layer", ((1510, 865), (1020, 865)), "#8b3a3a", True),
+        Edge("systems", "adapters", "versioned API / events", ((2020, 690), (2020, 760)), "#52616b"),
+        Edge("adapters", "events", "domain events", ((1880, 823), (1840, 823), (1840, 950), (1020, 950), (1020, 875)), "#7b3fa1"),
+        Edge("legacy", "adapters", "Strangler / ACL", ((1810, 865), (1880, 840)), "#8b3a3a", True),
         Edge("catalog", "observability", "lineage / access metadata", ((1415, 378), (1510, 390)), "#2e7d32", True),
         Edge("query", "observability", "query/export audit", ((1020, 445), (1510, 445)), "#2e7d32", True),
     )
@@ -181,7 +183,28 @@ def c4_container() -> str:
     ]
     body.extend(render_edge(edge) for edge in edges)
     body.extend(render_box(box) for box in boxes)
-    body.append(svg_text(["Синий — приложение/data; зелёный — security/audit; фиолетовый — events; красный — legacy/PHI isolation."], 35, 1365, 13, "#52616b", "start"))
+    body.extend(
+        [
+            '<rect x="35" y="1265" width="2125" height="260" rx="18" fill="#fffaf0" stroke="#d88c00" stroke-width="2"/>',
+            svg_text(["Декомпозиция ответственности ESB"], 60, 1300, 17, "#17212b", "start", "bold"),
+            svg_text(
+                [
+                    "ФЛК: API Gateway — синтаксис/авторизация; Schema Registry — схема/совместимость; Quality Gates — семантика и карантин; доменный сервис — инварианты.",
+                    "Потоковые и пакетные преобразования: Stream & Batch Processing; код, контракт и SLO принадлежат домену, платформа предоставляет исполнение.",
+                    "Маршрутизация: API Gateway (sync) и доменные topics/subscriptions (async); центральной content-based бизнес-маршрутизации нет.",
+                    "Надёжность: Outbox/CDC, at-least-once, idempotency key, retry/backoff, DLQ/quarantine, replay, audit и SLO.",
+                    "Интеграционная логика: Domain Integration Adapters / ACL переводят legacy- и партнёрские форматы в versioned contracts.",
+                    "Бизнес-логика: только Domain Operational Systems; Gateway, broker, pipelines и DWH бизнес-решений не принимают.",
+                ],
+                60,
+                1335,
+                12,
+                "#334155",
+                "start",
+            ),
+            svg_text(["Синий — приложение/data; зелёный — security/audit; фиолетовый — events; красный — legacy/PHI isolation."], 35, 1570, 13, "#52616b", "start"),
+        ]
+    )
     return svg_document(width, height, body)
 
 
