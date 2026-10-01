@@ -1,0 +1,23 @@
+#cloud-config
+package_update: true
+packages:
+  - nginx
+
+write_files:
+  - path: /var/www/html/index.html
+    permissions: "0644"
+    owner: root:root
+    content: |
+      <!doctype html>
+      <html lang="en">
+        <head><meta charset="utf-8"><title>${project_name}</title></head>
+        <body>
+          <h1>${project_name}</h1>
+          <p>Provisioned reproducibly by Terraform and cloud-init.</p>
+        </body>
+      </html>
+
+runcmd:
+  - [systemctl, enable, --now, nginx]
+
+final_message: "${project_name}: cloud-init completed"
